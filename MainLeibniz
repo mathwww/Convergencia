@@ -1,0 +1,15 @@
+
+public class MainLeibniz {
+
+	public static void main(String[] args) {
+	
+		double[] a = {1, 10, 100, 1000, 10000, 100000};
+		
+		Serie lz = new Serie();
+		
+		lz.Leibniz(a);
+		lz.Resultado();
+
+	}
+
+}
