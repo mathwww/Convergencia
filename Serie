@@ -1,0 +1,39 @@
+import java.lang.Math;
+public class Serie {
+	double B[] = new double[6];
+	public double[] Leibniz(double A[]){
+		double key = 0;
+		double  b;
+		
+		//double a0 = 0;
+		for(int j =0; j!= A.length; j++){
+			//System.out.println("O valor de A["+j+"] antes é : "+A[j]);
+			for(int i =0; i <= A[j]; i++){
+				b = (Math.pow(-1, i))/((2*i) + 1);
+		
+				b = b + key;
+				key = b;
+				if(i == A[j]){
+					B[j] = b;
+				}else{
+			
+				}
+				//System.out.println("o valor de i é: "+i);
+			//System.out.println("o valor de B["+j+"] agora é: "+B[j]);
+			}
+			
+			key = 0;
+	}
+			
+		
+		return B;
+	}
+	
+
+	void Resultado(){
+		for(int i=0; i !=B.length; i++){
+			System.out.println(B[i]*4);
+		}
+		
+	}
+}
